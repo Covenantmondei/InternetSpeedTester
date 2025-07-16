@@ -180,3 +180,10 @@ footer {
     margin-bottom: 20px;
     color: var(--accent);
 }
+
+#start-test {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    margin: auto;
+    display: block;
+}

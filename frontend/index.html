@@ -12,7 +12,10 @@
             <h1>Internet Speed Test</h1>
             <p class="subtitle">Measure your download and upload speeds in real-time</p>
         </header>
-
+        
+        <div style="display: flex; justify-content: center; margin: 2em 0;">
+            <button class="btn" id="start-test">Test Speed</button>
+        </div>
         <div class="speed-test-container">
             <div class="test-section" id="download-section">
                 <div class="test-icon">↓</div>
@@ -24,7 +27,7 @@
                     <div class="progress-bar" id="download-progress"></div>
                 </div>
                 
-                <button class="btn" id="start-download">Start Test</button>
+                <!-- <button class="btn" id="start-download">Start Test</button> -->
                 <div class="status" id="download-status"></div>
                 
                 <div class="results">
@@ -32,10 +35,10 @@
                         <span class="result-label">Ping:</span>
                         <span class="ping-display" id="download-ping">- ms</span>
                     </div>
-                    <div class="result-item">
+                    <!-- <div class="result-item">
                         <span class="result-label">Jitter:</span>
                         <span id="download-jitter">- ms</span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -49,7 +52,7 @@
                     <div class="progress-bar" id="upload-progress"></div>
                 </div>
                 
-                <button class="btn" id="start-upload">Start Test</button>
+                <!-- <button class="btn" id="start-upload">Start Test</button> -->
                 <div class="status" id="upload-status"></div>
                 
                 <div class="results">
@@ -57,10 +60,10 @@
                         <span class="result-label">Ping:</span>
                         <span class="ping-display" id="upload-ping">- ms</span>
                     </div>
-                    <div class="result-item">
+                    <!-- <div class="result-item">
                         <span class="result-label">Jitter:</span>
                         <span id="upload-jitter">- ms</span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
