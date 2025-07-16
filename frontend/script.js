@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             uploadSection.status.textContent = 'Testing...';
         }, 150);
 
-        fetch('http://127.0.0.1:8000/internet/test')
+        fetch('https://internetspeedtester.onrender.com/internet/test')
             .then(response => response.json())
             .then(data => {
                 clearInterval(animInterval);
