@@ -16,6 +16,7 @@ class InternetSpeedTest(APIView):
             upload = speed.upload() / 1_000_000
 
             ping = speed.results.ping
+            print(f"Download: {download:.2f} Mbps, Upload: {upload:.2f} Mbps, Ping: {ping:.2f} ms")
 
             return Response({
                 "Download": f"{download:.2f}",
