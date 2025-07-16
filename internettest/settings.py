@@ -25,7 +25,14 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = ['https://internetspeedtester.onrender.com/']
+#ALLOWED_HOSTS = ['https://internetspeedtester.onrender.com/']
+
+ALLOWED_HOSTS = [
+    'internetspeedtester.onrender.com',
+    'speedinternettester.vercel.app',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
