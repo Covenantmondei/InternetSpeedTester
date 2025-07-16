@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://internet-speed-tester-neon.vercel.app",
+    "https://speedinternettester.vercel.app",
 ]
 
 MIDDLEWARE = [
