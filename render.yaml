@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: Internet Speed Test App
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn internettest.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: internettest.settings
+      - key: PYTHON_VERSION
+        value: 3.10
