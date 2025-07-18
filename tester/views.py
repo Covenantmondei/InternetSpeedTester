@@ -9,14 +9,14 @@ class InternetSpeedTest(APIView):
     def get(self, request):
         try:
             speed = speedtest.Speedtest()
-            # speed.get_best_server()
 
             download = speed.download() / 1_000_000
 
             upload = speed.upload() / 1_000_000
 
             ping = speed.results.ping
-            # print(f"Download: {download:.2f} Mbps, Upload: {upload:.2f} Mbps, Ping: {ping:.2f} ms")
+            print(f"Download: {download:.2f} Mbps, Upload: {upload:.2f} Mbps, Ping: {ping:.2f} ms")
+
 
             return Response({
                 "Download": f"{download:.2f}",
